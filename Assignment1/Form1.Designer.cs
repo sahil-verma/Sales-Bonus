@@ -1,6 +1,6 @@
 ﻿namespace Assignment1
 {
-    partial class Form
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Calculate = new System.Windows.Forms.Button();
             this.Print = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.Label();
+            this.nameOfEmployee = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.Label();
             this.Hours = new System.Windows.Forms.Label();
             this.Sales = new System.Windows.Forms.Label();
@@ -104,19 +104,19 @@
             this.textBox2.Size = new System.Drawing.Size(150, 22);
             this.textBox2.TabIndex = 9;
             // 
-            // Name
+            // nameOfEmployee
             // 
-            this.Name.AutoSize = true;
-            this.Name.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(36, 107);
-            this.Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Name.Name = "Name";
-            this.Name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Name.Size = new System.Drawing.Size(120, 16);
-            this.Name.TabIndex = 10;
-            this.Name.Text = "Employee\'s Name";
-            this.Name.Click += new System.EventHandler(this.label1_Click_1);
+            this.nameOfEmployee.AutoSize = true;
+            this.nameOfEmployee.Cursor = System.Windows.Forms.Cursors.Default;
+            this.nameOfEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameOfEmployee.Location = new System.Drawing.Point(36, 107);
+            this.nameOfEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameOfEmployee.Name = "nameOfEmployee";
+            this.nameOfEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.nameOfEmployee.Size = new System.Drawing.Size(120, 16);
+            this.nameOfEmployee.TabIndex = 10;
+            this.nameOfEmployee.Text = "Employee\'s Name";
+            this.nameOfEmployee.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // ID
             // 
@@ -235,7 +235,7 @@
             this.radioButton2.Text = "Français";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // Form
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -252,7 +252,7 @@
             this.Controls.Add(this.Sales);
             this.Controls.Add(this.Hours);
             this.Controls.Add(this.ID);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.nameOfEmployee);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Clear);
@@ -260,7 +260,7 @@
             this.Controls.Add(this.Calculate);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form";
+            this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -277,7 +277,7 @@
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label nameOfEmployee;
         private System.Windows.Forms.Label ID;
         private System.Windows.Forms.Label Hours;
         private System.Windows.Forms.Label Sales;
