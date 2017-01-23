@@ -157,11 +157,11 @@
             // Bonus
             // 
             this.Bonus.AutoSize = true;
-            this.Bonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bonus.Location = new System.Drawing.Point(32, 253);
+            this.Bonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bonus.Location = new System.Drawing.Point(21, 253);
             this.Bonus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Bonus.Name = "Bonus";
-            this.Bonus.Size = new System.Drawing.Size(87, 16);
+            this.Bonus.Size = new System.Drawing.Size(99, 16);
             this.Bonus.TabIndex = 14;
             this.Bonus.Text = "Sales Bonus:";
             this.Bonus.Click += new System.EventHandler(this.label5_Click);
@@ -231,10 +231,10 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
