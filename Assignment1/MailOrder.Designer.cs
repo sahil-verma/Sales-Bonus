@@ -1,6 +1,6 @@
 ﻿namespace Assignment1
 {
-    partial class Form1
+    partial class MailOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailOrder));
             this.Calculate = new System.Windows.Forms.Button();
             this.Print = new System.Windows.Forms.Button();
             this.Next = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@
             // 
             this.Print.AutoSize = true;
             this.Print.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Print.Location = new System.Drawing.Point(156, 290);
+            this.Print.Location = new System.Drawing.Point(143, 290);
             this.Print.Margin = new System.Windows.Forms.Padding(4);
             this.Print.Name = "Print";
             this.Print.Size = new System.Drawing.Size(69, 26);
@@ -79,7 +79,7 @@
             // 
             this.Next.AutoSize = true;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Next.Location = new System.Drawing.Point(307, 290);
+            this.Next.Location = new System.Drawing.Point(270, 290);
             this.Next.Margin = new System.Windows.Forms.Padding(4);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(62, 26);
@@ -90,7 +90,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 104);
+            this.textBox1.Location = new System.Drawing.Point(119, 103);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(213, 22);
@@ -99,7 +99,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 136);
+            this.textBox2.Location = new System.Drawing.Point(119, 135);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(150, 22);
@@ -110,7 +110,7 @@
             this.nameOfEmployee.AutoSize = true;
             this.nameOfEmployee.Cursor = System.Windows.Forms.Cursors.Default;
             this.nameOfEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameOfEmployee.Location = new System.Drawing.Point(36, 107);
+            this.nameOfEmployee.Location = new System.Drawing.Point(-1, 106);
             this.nameOfEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameOfEmployee.Name = "nameOfEmployee";
             this.nameOfEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -123,7 +123,7 @@
             // 
             this.ID.AutoSize = true;
             this.ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(67, 139);
+            this.ID.Location = new System.Drawing.Point(30, 138);
             this.ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(89, 16);
@@ -134,7 +134,7 @@
             // 
             this.Hours.AutoSize = true;
             this.Hours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hours.Location = new System.Drawing.Point(58, 188);
+            this.Hours.Location = new System.Drawing.Point(21, 187);
             this.Hours.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Hours.Name = "Hours";
             this.Hours.Size = new System.Drawing.Size(98, 16);
@@ -146,7 +146,7 @@
             // 
             this.Sales.AutoSize = true;
             this.Sales.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sales.Location = new System.Drawing.Point(76, 223);
+            this.Sales.Location = new System.Drawing.Point(39, 222);
             this.Sales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Sales.Name = "Sales";
             this.Sales.Size = new System.Drawing.Size(80, 16);
@@ -158,7 +158,7 @@
             // 
             this.Bonus.AutoSize = true;
             this.Bonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bonus.Location = new System.Drawing.Point(69, 254);
+            this.Bonus.Location = new System.Drawing.Point(32, 253);
             this.Bonus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Bonus.Name = "Bonus";
             this.Bonus.Size = new System.Drawing.Size(87, 16);
@@ -168,7 +168,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 185);
+            this.textBox3.Location = new System.Drawing.Point(119, 184);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(150, 22);
@@ -176,7 +176,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 220);
+            this.textBox4.Location = new System.Drawing.Point(119, 219);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -186,7 +186,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(156, 251);
+            this.textBox5.Location = new System.Drawing.Point(119, 250);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(150, 22);
@@ -196,7 +196,7 @@
             // 
             this.Languages.Controls.Add(this.radioButton2);
             this.Languages.Controls.Add(this.radioButton1);
-            this.Languages.Location = new System.Drawing.Point(185, 13);
+            this.Languages.Location = new System.Drawing.Point(156, 13);
             this.Languages.Name = "Languages";
             this.Languages.Size = new System.Drawing.Size(176, 68);
             this.Languages.TabIndex = 22;
@@ -239,12 +239,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Form1
+            // MailOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(373, 322);
+            this.ClientSize = new System.Drawing.Size(335, 319);
             this.Controls.Add(this.Languages);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox5);
@@ -262,7 +262,7 @@
             this.Controls.Add(this.Calculate);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "MailOrder";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
