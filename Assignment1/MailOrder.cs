@@ -1,4 +1,13 @@
-﻿using System;
+﻿///<summary>
+///	Name of Programme - Sharp Mail Order - SALES BONUS
+///	Name - sahil verma
+///	Student Number - 200335300
+///	Date Last Modified - Jan-29, 2017
+///	Short revision history - fnctionality added, picture structured, structured
+///	Description - the app calculate the sales bonus of the employee by getting the 
+///	values of his/her hours and the monthly sale.
+/// </summary>
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +26,18 @@ namespace Assignment1
         //PRIVATE INSTANCE VARIABLES
         private double _percentageOfHoursWorked;
         private double _totalBonusAmount;
-        //CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++
 
+        //CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++
         public MailOrder()
         {
             InitializeComponent();
         }
         
+        /// <summary>
+        /// Entering number of hours and total sales
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _textFields(object sender, EventArgs e)
         {
             //textbox _textFields = (Button)sender;
@@ -32,8 +46,10 @@ namespace Assignment1
             switch (textFields.Name.ToString())
             {
                 case "NumberOfHours":
+                    //will check if there's any value in text field
                     if (NumberOfHours.Text.Length != 0)
                     {
+                        //it will store number of hours in variable storingData
                         if (double.TryParse(NumberOfHours.Text, out storingData))
                         {
 
@@ -74,6 +90,11 @@ namespace Assignment1
             }
         }
 
+        /// <summary>
+        /// calculate, print and clears the form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _Button_click(object sender, EventArgs e)
         {
             //Button _textFields = (Button)sender;
@@ -87,13 +108,14 @@ namespace Assignment1
                     SalesBonus.Text = (_percentageOfHoursWorked * _totalBonusAmount).ToString();
 
                 break;
-
+                //will show a message box that it prints the form
                 case "Print":
                     MessageBox.Show("The form is being send to the printer","Title",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 break;
 
+                // will clear the text fields
                 case "Next":
                     empName.ResetText();
                     ID.ResetText();
@@ -103,6 +125,11 @@ namespace Assignment1
             }
         }
 
+        /// <summary>
+        /// changing the language from english to french and visa-versa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void changeLanguage(object sender, EventArgs e)
         {
             switch (englishRadioButton.Checked)
