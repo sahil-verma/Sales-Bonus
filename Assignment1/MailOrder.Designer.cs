@@ -32,19 +32,19 @@
             this.Calculate = new System.Windows.Forms.Button();
             this.Print = new System.Windows.Forms.Button();
             this.Next = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.empName = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
             this.nameOfEmployee = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.Label();
+            this.Employee = new System.Windows.Forms.Label();
             this.Hours = new System.Windows.Forms.Label();
             this.Sales = new System.Windows.Forms.Label();
             this.Bonus = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.NumberOfHours = new System.Windows.Forms.TextBox();
+            this.TotalSales = new System.Windows.Forms.TextBox();
+            this.SalesBonus = new System.Windows.Forms.TextBox();
             this.Languages = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.frenchRadioButton = new System.Windows.Forms.RadioButton();
+            this.englishRadioButton = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Languages.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,141 +61,157 @@
             this.Calculate.TabIndex = 5;
             this.Calculate.Text = "Calculate";
             this.Calculate.UseVisualStyleBackColor = true;
+            this.Calculate.Click += new System.EventHandler(this._Button_click);
             // 
             // Print
             // 
             this.Print.AutoSize = true;
             this.Print.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Print.Location = new System.Drawing.Point(143, 290);
+            this.Print.Location = new System.Drawing.Point(163, 290);
             this.Print.Margin = new System.Windows.Forms.Padding(4);
             this.Print.Name = "Print";
             this.Print.Size = new System.Drawing.Size(69, 26);
             this.Print.TabIndex = 6;
             this.Print.Text = "Print";
             this.Print.UseVisualStyleBackColor = true;
-            this.Print.Click += new System.EventHandler(this.button7_Click);
+            this.Print.Click += new System.EventHandler(this._Button_click);
             // 
             // Next
             // 
             this.Next.AutoSize = true;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Next.Location = new System.Drawing.Point(270, 290);
+            this.Next.Location = new System.Drawing.Point(292, 290);
             this.Next.Margin = new System.Windows.Forms.Padding(4);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(62, 26);
             this.Next.TabIndex = 7;
             this.Next.Text = "Next";
             this.Next.UseVisualStyleBackColor = true;
-            this.Next.Click += new System.EventHandler(this.button8_Click);
+            this.Next.Click += new System.EventHandler(this._Button_click);
             // 
-            // textBox1
+            // empName
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 103);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 22);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(119, 135);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 22);
-            this.textBox2.TabIndex = 9;
-            // 
-            // nameOfEmployee
-            // 
-            this.nameOfEmployee.AutoSize = true;
-            this.nameOfEmployee.Cursor = System.Windows.Forms.Cursors.Default;
-            this.nameOfEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameOfEmployee.Location = new System.Drawing.Point(-1, 106);
-            this.nameOfEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.nameOfEmployee.Name = "nameOfEmployee";
-            this.nameOfEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nameOfEmployee.Size = new System.Drawing.Size(120, 16);
-            this.nameOfEmployee.TabIndex = 10;
-            this.nameOfEmployee.Text = "Employee\'s Name";
-            this.nameOfEmployee.Click += new System.EventHandler(this.label1_Click_1);
+            this.empName.Location = new System.Drawing.Point(133, 103);
+            this.empName.Margin = new System.Windows.Forms.Padding(4);
+            this.empName.Name = "empName";
+            this.empName.Size = new System.Drawing.Size(221, 22);
+            this.empName.TabIndex = 8;
+            this.empName.Tag = "textSpace";
+            this.empName.Click += new System.EventHandler(this._textFields);
+            this.empName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ID
             // 
-            this.ID.AutoSize = true;
-            this.ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(30, 138);
-            this.ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ID.Location = new System.Drawing.Point(133, 135);
+            this.ID.Margin = new System.Windows.Forms.Padding(4);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(89, 16);
-            this.ID.TabIndex = 11;
-            this.ID.Text = "Employee ID:";
+            this.ID.Size = new System.Drawing.Size(158, 22);
+            this.ID.TabIndex = 9;
+            this.ID.Tag = "textSpace";
+            this.ID.Click += new System.EventHandler(this._textFields);
+            this.ID.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // nameOfEmployee
+            // 
+            this.nameOfEmployee.Cursor = System.Windows.Forms.Cursors.Default;
+            this.nameOfEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameOfEmployee.Location = new System.Drawing.Point(3, 106);
+            this.nameOfEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameOfEmployee.Name = "nameOfEmployee";
+            this.nameOfEmployee.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.nameOfEmployee.Size = new System.Drawing.Size(129, 16);
+            this.nameOfEmployee.TabIndex = 10;
+            this.nameOfEmployee.Text = "Employee\'s Name";
+            this.nameOfEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.nameOfEmployee.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // Employee
+            // 
+            this.Employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employee.Location = new System.Drawing.Point(0, 138);
+            this.Employee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Employee.Name = "Employee";
+            this.Employee.Size = new System.Drawing.Size(132, 16);
+            this.Employee.TabIndex = 11;
+            this.Employee.Text = "Employee ID:";
+            this.Employee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Employee.Click += new System.EventHandler(this.Employee_Click);
             // 
             // Hours
             // 
-            this.Hours.AutoSize = true;
             this.Hours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hours.Location = new System.Drawing.Point(21, 187);
+            this.Hours.Location = new System.Drawing.Point(3, 187);
             this.Hours.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Hours.Name = "Hours";
-            this.Hours.Size = new System.Drawing.Size(98, 16);
+            this.Hours.Size = new System.Drawing.Size(132, 16);
             this.Hours.TabIndex = 12;
             this.Hours.Text = "Hours Worked:";
+            this.Hours.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Hours.Click += new System.EventHandler(this.label3_Click);
             // 
             // Sales
             // 
-            this.Sales.AutoSize = true;
             this.Sales.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sales.Location = new System.Drawing.Point(39, 222);
+            this.Sales.Location = new System.Drawing.Point(3, 222);
             this.Sales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Sales.Name = "Sales";
-            this.Sales.Size = new System.Drawing.Size(80, 16);
+            this.Sales.Size = new System.Drawing.Size(132, 16);
             this.Sales.TabIndex = 13;
             this.Sales.Text = "Total Sales:";
+            this.Sales.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Sales.Click += new System.EventHandler(this.label4_Click);
             // 
             // Bonus
             // 
-            this.Bonus.AutoSize = true;
             this.Bonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bonus.Location = new System.Drawing.Point(21, 253);
+            this.Bonus.Location = new System.Drawing.Point(3, 253);
             this.Bonus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Bonus.Name = "Bonus";
-            this.Bonus.Size = new System.Drawing.Size(99, 16);
+            this.Bonus.Size = new System.Drawing.Size(133, 16);
             this.Bonus.TabIndex = 14;
             this.Bonus.Text = "Sales Bonus:";
+            this.Bonus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Bonus.UseWaitCursor = true;
             this.Bonus.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox3
+            // NumberOfHours
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 184);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 22);
-            this.textBox3.TabIndex = 15;
+            this.NumberOfHours.Location = new System.Drawing.Point(133, 184);
+            this.NumberOfHours.Margin = new System.Windows.Forms.Padding(4);
+            this.NumberOfHours.Name = "NumberOfHours";
+            this.NumberOfHours.Size = new System.Drawing.Size(158, 22);
+            this.NumberOfHours.TabIndex = 15;
+            this.NumberOfHours.Tag = "textSpace";
+            this.NumberOfHours.Click += new System.EventHandler(this._textFields);
+            this.NumberOfHours.TextChanged += new System.EventHandler(this._textFields);
             // 
-            // textBox4
+            // TotalSales
             // 
-            this.textBox4.Location = new System.Drawing.Point(119, 219);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(150, 22);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.TotalSales.Location = new System.Drawing.Point(133, 219);
+            this.TotalSales.Margin = new System.Windows.Forms.Padding(4);
+            this.TotalSales.Name = "TotalSales";
+            this.TotalSales.Size = new System.Drawing.Size(158, 22);
+            this.TotalSales.TabIndex = 16;
+            this.TotalSales.Tag = "textSpace";
+            this.TotalSales.Click += new System.EventHandler(this._textFields);
+            this.TotalSales.TextChanged += new System.EventHandler(this._textFields);
             // 
-            // textBox5
+            // SalesBonus
             // 
-            this.textBox5.Location = new System.Drawing.Point(119, 250);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 22);
-            this.textBox5.TabIndex = 17;
+            this.SalesBonus.Location = new System.Drawing.Point(133, 253);
+            this.SalesBonus.Margin = new System.Windows.Forms.Padding(4);
+            this.SalesBonus.Name = "SalesBonus";
+            this.SalesBonus.ReadOnly = true;
+            this.SalesBonus.Size = new System.Drawing.Size(158, 22);
+            this.SalesBonus.TabIndex = 17;
+            this.SalesBonus.Tag = "textSpace";
+            this.SalesBonus.Click += new System.EventHandler(this._textFields);
+            this.SalesBonus.TextChanged += new System.EventHandler(this.SalesBonus_TextChanged);
             // 
             // Languages
             // 
-            this.Languages.Controls.Add(this.radioButton2);
-            this.Languages.Controls.Add(this.radioButton1);
+            this.Languages.Controls.Add(this.frenchRadioButton);
+            this.Languages.Controls.Add(this.englishRadioButton);
             this.Languages.Location = new System.Drawing.Point(156, 13);
             this.Languages.Name = "Languages";
             this.Languages.Size = new System.Drawing.Size(176, 68);
@@ -204,27 +220,29 @@
             this.Languages.Text = "Languages";
             this.Languages.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioButton2
+            // frenchRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 48);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(78, 20);
-            this.radioButton2.TabIndex = 28;
-            this.radioButton2.Text = "Français";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.frenchRadioButton.AutoSize = true;
+            this.frenchRadioButton.Location = new System.Drawing.Point(6, 48);
+            this.frenchRadioButton.Name = "frenchRadioButton";
+            this.frenchRadioButton.Size = new System.Drawing.Size(78, 20);
+            this.frenchRadioButton.TabIndex = 28;
+            this.frenchRadioButton.Text = "Français";
+            this.frenchRadioButton.UseVisualStyleBackColor = true;
+            this.frenchRadioButton.CheckedChanged += new System.EventHandler(this.changeLanguage);
             // 
-            // radioButton1
+            // englishRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 22);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 20);
-            this.radioButton1.TabIndex = 27;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "English";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.englishRadioButton.AutoSize = true;
+            this.englishRadioButton.Checked = true;
+            this.englishRadioButton.Location = new System.Drawing.Point(6, 22);
+            this.englishRadioButton.Name = "englishRadioButton";
+            this.englishRadioButton.Size = new System.Drawing.Size(70, 20);
+            this.englishRadioButton.TabIndex = 27;
+            this.englishRadioButton.TabStop = true;
+            this.englishRadioButton.Text = "English";
+            this.englishRadioButton.UseVisualStyleBackColor = true;
+            this.englishRadioButton.CheckedChanged += new System.EventHandler(this.changeLanguage);
             // 
             // pictureBox1
             // 
@@ -244,19 +262,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(335, 319);
+            this.ClientSize = new System.Drawing.Size(356, 319);
             this.Controls.Add(this.Languages);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.SalesBonus);
+            this.Controls.Add(this.TotalSales);
+            this.Controls.Add(this.NumberOfHours);
             this.Controls.Add(this.Bonus);
             this.Controls.Add(this.Sales);
             this.Controls.Add(this.Hours);
-            this.Controls.Add(this.ID);
+            this.Controls.Add(this.Employee);
             this.Controls.Add(this.nameOfEmployee);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ID);
+            this.Controls.Add(this.empName);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.Print);
             this.Controls.Add(this.Calculate);
@@ -264,8 +282,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MailOrder";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Form1";
+            this.Text = "Calculate";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this._Button_click);
             this.Languages.ResumeLayout(false);
             this.Languages.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -279,19 +298,19 @@
         private System.Windows.Forms.Button Calculate;
         private System.Windows.Forms.Button Print;
         private System.Windows.Forms.Button Next;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox empName;
+        private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.Label nameOfEmployee;
-        private System.Windows.Forms.Label ID;
+        private System.Windows.Forms.Label Employee;
         private System.Windows.Forms.Label Hours;
         private System.Windows.Forms.Label Sales;
         private System.Windows.Forms.Label Bonus;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox NumberOfHours;
+        private System.Windows.Forms.TextBox TotalSales;
+        private System.Windows.Forms.TextBox SalesBonus;
         private System.Windows.Forms.GroupBox Languages;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton frenchRadioButton;
+        private System.Windows.Forms.RadioButton englishRadioButton;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
