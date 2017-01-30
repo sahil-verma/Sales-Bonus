@@ -76,14 +76,14 @@ namespace Assignment1
                 case "TotalSales":
                     if(TotalSales.Text.Length != 0)
                     {
-                        if (!double.TryParse(TotalSales.Text , out storingData))
+                        string salesAmount = (TotalSales.Text.ToString().IndexOf("$") != -1) ? TotalSales.Text.ToString().Remove(TotalSales.Text.ToString().IndexOf("$"), 1) : "0";
+                        if (!double.TryParse(salesAmount , out storingData))
                         { 
                             MessageBox.Show("Enter numbers only", "Error",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
-                            TotalSales.Text = TotalSales.Text.Remove(TotalSales.Text.Length -1);
+                            TotalSales.Text = TotalSales.Text.ToString().Remove(TotalSales.Text.Length -1);
                             TotalSales.SelectionStart = TotalSales.Text.Length;
-
                         }
                     }
                 break;
@@ -107,7 +107,9 @@ namespace Assignment1
                     _totalBonusAmount = Double.Parse(TotalSales.Text) * 0.02;
                     SalesBonus.Text = (_percentageOfHoursWorked * _totalBonusAmount).ToString();
 
-                break;
+                    TotalSales.Text = Double.Parse(TotalSales.Text).ToString("C", CultureInfo.CurrentCulture);
+
+                    break;
                 //will show a message box that it prints the form
                 case "Print":
                     MessageBox.Show("The form is being send to the printer","Title",
